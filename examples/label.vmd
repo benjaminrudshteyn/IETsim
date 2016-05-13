@@ -1,0 +1,9 @@
+proc label_atoms { ca101.xyz all } {
+  set sel [atomselect ca101.xyz $all]
+  set atomlist [all list]
+  foreach {atom} $atomlist {
+    set atomlabel [format "%d/%d" ca101.xyz $atom]
+    label add Atoms $atomlabel
+  }
+  $sel delete
+} 

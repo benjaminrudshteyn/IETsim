@@ -1,0 +1,21 @@
+Tutorial Author's Note:
+This directory of codes comes from Greg Landrum's YAeHMOP code as cited below:
+Landrum, G, Glassey, W: Yet Another extended Hückel Molecular Orbital Package (YAeHMOP) Cornell University, NY: Ithaca (2004) 
+Landrum's original comment is below:
+
+This directory contains a set of programs for generating Ramirez and
+Bohm style K-point sets.  These programs were written by John
+Mitchell, I have made slight modifications to remove a couple of
+crashing bugs and to have them generate output files that can be used
+with bind.  I have not made any other modifications to the code.
+
+I'm distributing these programs along with YAeHMOP as a service to users,
+I am not supporting them and I cannot guarantee their correctness.
+The program kpointer describes the programs.
+
+All programs produce a file called kout which contains the K-points
+and weights.  This file can be inserted directly into a bind input
+file.
+
+Greg Landrum
+April 07, 1997

@@ -1,0 +1,27 @@
+
+
+Two input files for catechol on the anatase (101) surface. The bind file is for dynamics and the in file is 
+for cubebuilder2.
+
+To run dynamics type:
+
+$ dynamics catechol_anatase101.bind
+
+This should produce several files; .out .status .edyn .edyn.wave.
+The .out and .status files are the yaehmop output files.
+The .edyn has the survival amplitude and occupation output.
+The .edyn.wave file is used for creating Gaussian format cube files.
+
+
+
+To run cubebuilder type:
+
+$ cubebuilder2 catechol_anatase.in catechol_anatase101.bind.edyn.wave
+
+This should produce a number of cube files that can be visualized with either 
+Molekel or VMD.
+
+
+
+
+-Robert Snoeberger 4-15-08 
